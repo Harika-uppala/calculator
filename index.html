@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+   <style>
+         body{
+            background-image: url(https://t4.ftcdn.net/jpg/04/04/71/69/240_F_404716961_xUmDq0AFlertFvbDX2SlYCruQPK0GZX4.jpg) ;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        h1{
+            color:aliceblue ;
+            text-shadow: 7px 7px 3px rgb(255, 10, 145);
+            font-family: 'Brush Script MT',cursive;
+            font-size: 120px;
+            margin: auto;
+            margin-left: 150px;
+            margin-top: 5%;
+        }
+        .head{
+            text-align: center;
+            height: 150%;
+            width:20%;
+            margin-left: 45%;
+            margin-top: 3%;
+            background-color: rgb(193, 110, 160);
+
+        }
+    </style>
+</head>
+<body>
+    <center><h1><i>Calculator</i></h1></center>
+    <div class="head">
+        <br>
+        <center><input type="number" placeholder="Enter a Number" id="n"></center>
+        <br>
+        <div id="result" placeholder="result"></div>
+        <br>
+        <div id="wait">wait</div>
+        <br>
+        <div class="op">
+           <input type="submit"value="Add" id="add" onclick="add()">
+           <input type="submit"value="Sub" id="sub" onclick="sub()">
+           <input type="submit"value="Mul" id="mul" onclick="mul()">
+           <input type="submit"value="Div" id="div" onclick="div()">
+        </div>
+        <br>
+        <input type="submit"value="Reload" id="reload" onclick="window.location.reload()">
+        <input type="submit" value="=" id="eq" onclick="eq()">
+        <br>
+        <br>
+    </div>
+    <script src="design.js"></script>
+</body>
+</html>
